@@ -19,4 +19,11 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Apis\" />
+      <Folder Include="Infrastructure\" />
+      <Folder Include="Model\" />
+      <Folder Include="Services\" />
+    </ItemGroup>
+
 </Project>

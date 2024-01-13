@@ -1,0 +1,6 @@
+﻿services:
+  vk.getway:
+    image: vk.getway
+    build:
+      context: .
+      dockerfile: VK.GetWay/Dockerfile
