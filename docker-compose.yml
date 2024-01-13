@@ -1,6 +1,33 @@
 ﻿services:
-  vk.getway:
-    image: vk.getway
+  getway.api:
+    image: getway.api
     build:
       context: .
-      dockerfile: VK.GetWay/Dockerfile
+      dockerfile: Getway.API/Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    networks:
+      - proxybackend
+  
+  user.api:
+    image: ${DOCKER_REGISTRY-}user.api
+    build:
+      context: .
+      dockerfile: User.API/Dockerfile
+    ports:
+      - "5100:5100"
+      - "5101:5101"
+    networks:
+      - proxybackend
+  
+  identity.api:
+    image: identity.api
+    build:
+      context: .
+      dockerfile: Identity.API/Dockerfile
+  
+networks:
+  proxybackend:
+    name: proxybackend
+    driver: bridge

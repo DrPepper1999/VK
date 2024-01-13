@@ -9,14 +9,22 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="ErrorOr" Version="1.9.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+        <PackageReference Include="Yarp.ReverseProxy" Version="2.1.0" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Include="..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Infrastructure\" />
+      <Folder Include="Model\" />
+      <Folder Include="Services\" />
     </ItemGroup>
 
 </Project>

@@ -1,0 +1,59 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  getway.api:
+    build:
+      context: "C:\\Users\\molch\\RiderProjects\\VK"
+      dockerfile: "Getway.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Getway.API.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+    image: "getway.api:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\molch\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https"
+    - "C:\\Users\\molch\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets"
+    - "C:\\Users\\molch\\RiderProjects\\VK\\Getway.API:/app:rw"
+    working_dir: "/app"
+  identity.api:
+    build:
+      context: "C:\\Users\\molch\\RiderProjects\\VK"
+      dockerfile: "Identity.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Identity.API.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+    image: "identity.api:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\molch\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https"
+    - "C:\\Users\\molch\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets"
+    - "C:\\Users\\molch\\RiderProjects\\VK\\Identity.API:/app:rw"
+    working_dir: "/app"
+  user.api:
+    build:
+      context: "C:\\Users\\molch\\RiderProjects\\VK"
+      dockerfile: "User.API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/User.API.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+    image: "user.api:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\molch\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https"
+    - "C:\\Users\\molch\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets"
+    - "C:\\Users\\molch\\RiderProjects\\VK\\User.API:/app:rw"
+    working_dir: "/app"
