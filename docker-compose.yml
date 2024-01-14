@@ -1,0 +1,19 @@
+﻿version: '3.8'
+
+services:
+  users.api:
+    image: users.api
+    build:
+      context: .
+      dockerfile: Users.API/Dockerfile
+    ports:
+      - "5100:80"
+      - "5101:443"
+
+  identity.api:
+    image: identity.api
+    build:
+      context: .
+      dockerfile: Identity.API/Dockerfile
+    ports:
+      - "80:80"
