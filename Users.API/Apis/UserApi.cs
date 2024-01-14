@@ -1,4 +1,4 @@
-﻿namespace User.API.Apis;
+﻿namespace Users.API.Apis;
 
 public static class UserApi
 {

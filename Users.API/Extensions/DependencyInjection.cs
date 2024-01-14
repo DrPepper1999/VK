@@ -1,4 +1,4 @@
-﻿namespace User.API.Extensions;
+﻿namespace Users.API.Extensions;
 
 public class DependencyInjection
 {

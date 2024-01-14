@@ -3,9 +3,9 @@ using ErrorOr;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Options;
-using User.API.Common.Http;
+using Users.API.Common.Http;
 
-namespace User.API.Common.Errors
+namespace Users.API.Common.Errors
 {
     public class ProblemDetailsFactory : Microsoft.AspNetCore.Mvc.Infrastructure.ProblemDetailsFactory
     {

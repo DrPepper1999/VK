@@ -1,4 +1,4 @@
-﻿namespace User.API.Common.Cookies
+﻿namespace Users.API.Common.Cookies
 {
     public static class CookieItemKeys
     {

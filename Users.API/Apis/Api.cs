@@ -1,11 +1,4 @@
-﻿using System.Runtime.InteropServices.JavaScript;
-using ErrorOr;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using User.API.Common.Http;
-
-namespace User.API.Apis;
+﻿namespace Users.API.Apis;
 
 public class Api
 {

@@ -1,4 +1,4 @@
-﻿namespace User.API.Common.Http
+﻿namespace Users.API.Common.Http
 {
     public static class HttpContextItemKeys
     {
